@@ -1,11 +1,5 @@
 <!-- This is just boilerplate stuff
  
-    <div id="footer"></div>
-    <script src="../scripts/loadFooter.js"></script>
-    <script> loadFooter("../footer.html")</script>
-
-    
--------------------------------------------------------------
 <html>
 
 <head>
@@ -13,16 +7,33 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-
 </html>
 
+ 
 <body>
+    <div id="header"></div>
+
+    <script src="../scripts/loadHeader.js"></script>
+    <script src="../scripts/loadWord.js"></script>
+
+        <script>
+            loadHeader("../header.html").then(() => { 
+                loadWord(); 
+            }); 
+    </script>
+
+
+    <div class="page">
+    <main>
+        <p>yoooo</p>
+    </main>
+    </div>
+
     <div id="footer"></div>
     <script src="../scripts/loadFooter.js"></script>
     <script> loadFooter("../footer.html")</script>
 
 </body>
-
 
 
 
