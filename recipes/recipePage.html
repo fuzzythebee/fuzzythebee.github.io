@@ -9,16 +9,17 @@
 
 
 <body>
+<!-- This is the header section -->
     <div id="header"></div>
-
     <script src="../scripts/loadHeader.js"></script>
     <script src="../scripts/loadWord.js"></script>
-
-        <script>
-            loadHeader("../header.html").then(() => { 
-                loadWord(); 
-            }); 
+    <script>
+        loadHeader("header.html").then(() => { 
+            loadWord(); 
+        }); 
     </script>
+<!-- This is the header section -->
+
 
 
     <div class="page">
@@ -27,8 +28,10 @@
     </main>
     </div>
 
+<!-- This is the footer section -->
     <div id="footer"></div>
     <script src="../scripts/loadFooter.js"></script>
     <script> loadFooter("../footer.html")</script>
+<!-- This is the footer section -->
 
 </body>
