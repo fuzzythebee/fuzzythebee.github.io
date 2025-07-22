@@ -47,10 +47,15 @@ ol{
   text-align: center;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+body{
+  display:grid;
+  grid-template-rows:auto 1fr auto;  
+  min-height:100vh;               
+  margin:0;                        
+}
+
+.footer{
+  grid-column: 1 / -1;
   width: 100%;
   text-align: center;
 }
